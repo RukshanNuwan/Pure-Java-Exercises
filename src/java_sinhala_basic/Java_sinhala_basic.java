@@ -35,8 +35,13 @@ public class Java_sinhala_basic extends JFrame {
 
         // create text field
         JTextField txt = new JTextField("");
-        txt.setBounds(10, 10, 200, 20);
+        txt.setBounds(100, 10, 200, 20);
         add(txt);
+
+        // create label
+        JLabel lblUserName = new JLabel("Username");
+        lblUserName.setBounds(10, 10, 80, 20);
+        add(lblUserName);
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Functions
