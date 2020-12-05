@@ -19,6 +19,33 @@ public class Java_sinhala_basic extends JFrame {
         // Components
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // new added objects are always add to this area [between setLayout() and setDefaultCloseOperation() functions]
+
+        // create panel
+        JPanel panel = new JPanel();
+        panel.setBounds(15, 50, 350, 100);
+        panel.setBackground(Color.LIGHT_GRAY);
+        add(panel);
+
+        // create username label
+        JLabel lblUserName = new JLabel("Username");
+        lblUserName.setBounds(25, 70, 80, 20);
+        add(lblUserName);
+
+        // create username text field
+        JTextField txtUserName = new JTextField("");
+        txtUserName.setBounds(115, 70, 200, 20);
+        add(txtUserName);
+
+        // create password label
+        JLabel lblPassword = new JLabel("Password");
+        lblPassword.setBounds(25, 100, 80, 20);
+        add(lblPassword);
+
+        // create password text field
+        JTextField txtPassword = new JTextField("");
+        txtPassword.setBounds(115, 100, 200, 20);
+        add(txtPassword);
+
         // create a button
         JButton btnClose = new JButton("Close");
         // set location of button
@@ -40,26 +67,6 @@ public class Java_sinhala_basic extends JFrame {
         // add button into the JFrame
         add(btnLogin);
 
-        // create username label
-        JLabel lblUserName = new JLabel("Username");
-        lblUserName.setBounds(10, 10, 80, 20);
-        add(lblUserName);
-
-        // create username text field
-        JTextField txtUserName = new JTextField("");
-        txtUserName.setBounds(100, 10, 200, 20);
-        add(txtUserName);
-
-        // create password label
-        JLabel lblPassword = new JLabel("Password");
-        lblPassword.setBounds(10, 40, 80, 20);
-        add(lblPassword);
-
-        // create password text field
-        JTextField txtPassword = new JTextField("");
-        txtPassword.setBounds(100, 40, 200, 20);
-        add(txtPassword);
-
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Functions
@@ -80,6 +87,7 @@ public class Java_sinhala_basic extends JFrame {
                 txtPassword.setText("");
             }
         });
+
 
         // close the JFrame when click the close button on top
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
