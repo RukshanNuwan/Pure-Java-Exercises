@@ -22,29 +22,30 @@ public class Java_sinhala_basic extends JFrame {
 
         // create panel
         JPanel panel = new JPanel();
-        panel.setBounds(15, 50, 350, 100);
+        panel.setBounds(0, 90, 350, 100);
         panel.setBackground(Color.LIGHT_GRAY);
+        panel.setLayout(null);
         add(panel);
 
         // create username label
         JLabel lblUserName = new JLabel("Username");
-        lblUserName.setBounds(25, 70, 80, 20);
-        add(lblUserName);
+        lblUserName.setBounds(25, 25, 80, 20);
+        panel.add(lblUserName);
 
         // create username text field
         JTextField txtUserName = new JTextField("");
-        txtUserName.setBounds(115, 70, 200, 20);
-        add(txtUserName);
+        txtUserName.setBounds(115, 25, 200, 20);
+        panel.add(txtUserName);
 
         // create password label
         JLabel lblPassword = new JLabel("Password");
-        lblPassword.setBounds(25, 100, 80, 20);
-        add(lblPassword);
+        lblPassword.setBounds(25, 55, 80, 20);
+        panel.add(lblPassword);
 
         // create password text field
         JTextField txtPassword = new JTextField("");
-        txtPassword.setBounds(115, 100, 200, 20);
-        add(txtPassword);
+        txtPassword.setBounds(115, 55, 200, 20);
+        panel.add(txtPassword);
 
         // create a button
         JButton btnClose = new JButton("Close");
