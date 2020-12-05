@@ -15,7 +15,9 @@ public class Java_sinhala_basic extends JFrame {
         // set JFrame layout null
         setLayout(null);
 
-
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // Components
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // new added objects are always add to this area [between setLayout() and setDefaultCloseOperation() functions]
         // create a button
         JButton btnClose = new JButton("Close");
@@ -24,11 +26,34 @@ public class Java_sinhala_basic extends JFrame {
         // add button into the JFrame
         add(btnClose);
 
+        // create clear button
+        JButton btnClear = new JButton("Clear");
+        // set location of button
+        btnClear.setBounds(200, 330, 80, 20);
+        // add button into the JFrame
+        add(btnClear);
+
+        // create text field
+        JTextField txt = new JTextField("");
+        txt.setBounds(10, 10, 200, 20);
+        add(txt);
+
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // Functions
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // add action into the close button
         btnClose.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
+            }
+        });
+
+        // add action into the clear button
+        btnClear.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                txt.setText("");
             }
         });
 
