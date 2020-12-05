@@ -33,15 +33,25 @@ public class Java_sinhala_basic extends JFrame {
         // add button into the JFrame
         add(btnClear);
 
-        // create text field
-        JTextField txt = new JTextField("");
-        txt.setBounds(100, 10, 200, 20);
-        add(txt);
-
-        // create label
+        // create username label
         JLabel lblUserName = new JLabel("Username");
         lblUserName.setBounds(10, 10, 80, 20);
         add(lblUserName);
+
+        // create username text field
+        JTextField txtUserName = new JTextField("");
+        txtUserName.setBounds(100, 10, 200, 20);
+        add(txtUserName);
+
+        // create password label
+        JLabel lblPassword = new JLabel("Password");
+        lblPassword.setBounds(10, 40, 80, 20);
+        add(lblPassword);
+
+        // create password text field
+        JTextField txtPassword = new JTextField("");
+        txtPassword.setBounds(100, 40, 200, 20);
+        add(txtPassword);
 
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -59,7 +69,8 @@ public class Java_sinhala_basic extends JFrame {
         btnClear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                txt.setText("");
+                txtUserName.setText("");
+                txtPassword.setText("");
             }
         });
 
