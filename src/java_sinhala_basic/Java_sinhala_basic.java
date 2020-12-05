@@ -33,6 +33,13 @@ public class Java_sinhala_basic extends JFrame {
         // add button into the JFrame
         add(btnClear);
 
+        // create login button
+        JButton btnLogin = new JButton("Login");
+        // set location of button
+        btnLogin.setBounds(110, 330, 80, 20);
+        // add button into the JFrame
+        add(btnLogin);
+
         // create username label
         JLabel lblUserName = new JLabel("Username");
         lblUserName.setBounds(10, 10, 80, 20);
