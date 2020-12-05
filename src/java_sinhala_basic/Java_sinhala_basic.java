@@ -17,8 +17,8 @@ public class Java_sinhala_basic extends JFrame {
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Components
-        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // new added objects are always add to this area [between setLayout() and setDefaultCloseOperation() functions]
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // create panel
         JPanel panel = new JPanel();
